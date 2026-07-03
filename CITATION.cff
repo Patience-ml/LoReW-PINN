@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the accompanying manuscript."
-title: "LoReW-PINN: Local Residual Weighting for Adaptive Physics-Informed Neural Network Training"
+title: "LoReW-PINN: Local Residual Weighting for Physics-Informed Neural Networks with Non-uniform Residual Fields"
 type: software
 authors:
   - family-names: Liu

@@ -2,7 +2,7 @@
 
 Code accompanying the manuscript:
 
-**LoReW-PINN: Local Residual Weighting for Adaptive Physics-Informed Neural Network Training**
+**LoReW-PINN: Local Residual Weighting for Physics-Informed Neural Networks with Non-uniform Residual Fields**
 
 This repository contains the reproducible experiment scripts for LoReW-PINN and C-LoReW-PINN, together with the baseline PINN variants used in the paper.
 
