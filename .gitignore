@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Experiment outputs
+**/logs/
+**/models/
+**/figures/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Temporary files
+tmp/
+temp/
+
+# Keep manuscript figure assets included in this release
+!paper_figures/
+!paper_figures/*.png
+!paper_figures/*.pdf
+!paper_figures/*.csv

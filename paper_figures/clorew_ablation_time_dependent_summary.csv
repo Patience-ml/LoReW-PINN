@@ -1,0 +1,13 @@
+pde,short_label,seed,method,relative_l2_error
+Reaction-diffusion,RD,2138,LoReW-PINN,6.3866400000e-03
+Reaction-diffusion,RD,2138,CR-PINN,1.2832600000e-02
+Reaction-diffusion,RD,2138,C-LoReW-PINN,5.7895700000e-03
+Klein-Gordon,KG,5472,LoReW-PINN,8.3320200000e-02
+Klein-Gordon,KG,5472,CR-PINN,2.9668900000e-02
+Klein-Gordon,KG,5472,C-LoReW-PINN,4.8448700000e-03
+Burgers,Burgers,2566,LoReW-PINN,4.7488200000e-02
+Burgers,Burgers,2566,CR-PINN,8.4475900000e-02
+Burgers,Burgers,2566,C-LoReW-PINN,2.9989200000e-03
+Allen-Cahn,AC,1234,LoReW-PINN,1.7141400000e-03
+Allen-Cahn,AC,1234,CR-PINN,2.9963400000e-03
+Allen-Cahn,AC,1234,C-LoReW-PINN,3.5991000000e-04

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "LoReW-PINN: Local Residual Weighting for Adaptive Physics-Informed Neural Network Training"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Hailong
+  - family-names: Xu
+    given-names: Huiling
+date-released: 2026-07-03
