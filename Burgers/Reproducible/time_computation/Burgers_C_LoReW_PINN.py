@@ -289,8 +289,8 @@ class PINN():
                 sol = tonp(res)
                 sol = np.reshape(sol, (nt, nx)).T
 
-                l2_rel = np.linalg.norm(self.Exact - sol, 2) / np.linalg.norm(self.Exact, 2)
-                l_inf = np.linalg.norm(self.Exact - sol, np.inf) / np.linalg.norm(self.Exact, np.inf)
+                l2_rel = np.linalg.norm((self.Exact - sol).ravel(), 2) / np.linalg.norm(self.Exact.ravel(), 2)
+                l_inf = np.linalg.norm((self.Exact - sol).ravel(), np.inf) / np.linalg.norm(self.Exact.ravel(), np.inf)
                 gbar_mean = float(torch.mean(self.gbar).item())
                 local_scale_mean = float(torch.mean(self.kernel_local_scale(torch.abs(self.r_pred).detach())).item())
                 gate_abs_res_log = float((torch.sum(self.gbar * torch.abs(self.r_pred).detach()) / (torch.sum(self.gbar) + self.kernel_eps)).item())
@@ -342,8 +342,8 @@ if __name__ == "__main__":
         u_pred_np = tonp(u_pred)
         sol = np.reshape(u_pred_np, (nt, nx)).T
 
-    final_l2_rel = np.linalg.norm(model.Exact - sol, 2) / np.linalg.norm(model.Exact, 2)
-    final_l_inf = np.linalg.norm(model.Exact - sol, np.inf) / np.linalg.norm(model.Exact, np.inf)
+    final_l2_rel = np.linalg.norm((model.Exact - sol).ravel(), 2) / np.linalg.norm(model.Exact.ravel(), 2)
+    final_l_inf = np.linalg.norm((model.Exact - sol).ravel(), np.inf) / np.linalg.norm(model.Exact.ravel(), np.inf)
 
     fig, ax = plt.subplots(1, 3, figsize=(18, 5))
 

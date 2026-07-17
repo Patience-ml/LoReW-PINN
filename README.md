@@ -33,7 +33,7 @@ LoReW-PINN/
   paper_figures/             Generated figures used in the manuscript
 ```
 
-Each benchmark folder contains scripts for vanilla PINN, SA-PINN, RBA-PINN, LoReW-PINN, and/or C-LoReW-PINN as appropriate for the PDE type. Time-dependent benchmarks also include ablation and hyperparameter-sensitivity scripts.
+Each benchmark folder contains the scripts needed for the paper's main comparisons. Sensitivity, ablation, runtime, residual-field, and generalization-gap analyses are included where applicable.
 
 ## Installation
 

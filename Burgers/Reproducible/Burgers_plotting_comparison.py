@@ -138,7 +138,7 @@ def main(show=True):
         err = np.abs(exact - pred)
         predictions[method['name']] = pred
         errors[method['name']] = err
-        l2_errors[method['name']] = np.linalg.norm(exact - pred, 2) / np.linalg.norm(exact, 2)
+        l2_errors[method['name']] = np.linalg.norm((exact - pred).ravel(), 2) / np.linalg.norm(exact.ravel(), 2)
         linf_errors[method['name']] = np.linalg.norm((exact - pred).ravel(), np.inf) / np.linalg.norm(exact.ravel(), np.inf)
 
     solution_vmin = min([exact.min()] + [pred.min() for pred in predictions.values()])
