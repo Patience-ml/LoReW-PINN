@@ -107,7 +107,7 @@ PROBLEMS = {
     "Helmholtz": ProblemConfig(
         name="Helmholtz",
         base_dir=PROJECT_ROOT / "Helmholtz" / "Reproducible",
-        seeds=(1234, 1648, 2138, 2341, 3053, 3624, 4083, 4399, 5035, 5472),
+        seeds=(1234, 1648, 2138, 2341, 3053, 3624, 4083, 4399, 5035, 5123),
         methods=STEADY_METHODS,
     ),
     "Reaction-Diffusion": ProblemConfig(
@@ -131,7 +131,7 @@ PROBLEMS = {
     "Allen-Cahn": ProblemConfig(
         name="Allen-Cahn",
         base_dir=PROJECT_ROOT / "AC" / "Reproducible",
-        seeds=(1018, 1234, 2428, 2832, 3542, 3625, 4235, 4864, 5483, 5656),
+        seeds=(1018, 1234, 2428, 2832, 3542, 3810, 4235, 4864, 5483, 5656),
         methods=(
             MethodConfig("Vanilla PINN", "losses_pinn_fourier_{seed}.txt"),
             MethodConfig("SA-PINN", "losses_sa_fourier_{seed}.txt"),

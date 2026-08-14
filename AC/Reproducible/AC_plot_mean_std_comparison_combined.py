@@ -10,7 +10,7 @@ plt.rcParams['mathtext.fontset'] = 'stix'
 plt.rcParams['figure.max_open_warning'] = 4
 
 
-SEEDS = [1018, 1234, 2428, 2832, 3542, 3625, 4235, 4864, 5483, 5855]
+SEEDS = [1018, 1234, 2428, 2832, 3542, 3810, 4235, 4864, 5483, 5656]
 NUM_DISPLAY_POINTS = 18
 
 METHODS = {
